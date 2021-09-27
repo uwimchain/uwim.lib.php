@@ -1,0 +1,22 @@
+{
+  "name": "1/uwim-lib-php",
+  "authors": [
+    {
+      "name": "uwimchain",
+      "email": "uwgitdev@gmail.com"
+    }
+  ],
+  "require": {
+    "bitwasp/bitcoin-lib": "1.0.*",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-mbstring": "*",
+    "ext-gmp": "*",
+    "ext-openssl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "uwim\\": "uwim/"
+    }
+  }
+}
