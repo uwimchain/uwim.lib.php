@@ -140,6 +140,30 @@ class Uwim
         }
     }
 
+    public static function PublicKeyFromAddress($address)
+    {
+        $BECH32 = new Bech32();
+
+        $publicKey = $BECH32->decode($address);
+        return substr($publicKey, 2, strlen($publicKey));
+    }
+
+    /**
+     * @param $address
+     * @param $prefix // Префикс адреса, один из трёх: "uw", "nd", "sc"
+     * @return string
+     * @throws Exception
+     */
+    public static function AddressFromAnotherAddress($address,$prefix)
+    {
+        $publicKey = self::PublicKeyFromAddress($address);
+        try {
+            return self::AddressFromPublicKey($publicKey, $prefix);
+        } catch (Exception $e) {
+            throw $e;
+        }
+    }
+
     /**
      * @param $mnemonic string
      * @param $sender string
