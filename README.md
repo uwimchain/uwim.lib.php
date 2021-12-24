@@ -77,7 +77,7 @@ $sc_address = Uwim::AddressFromMnemonic($mnemonic, "sc");<br><br>
 $nd_address = Uwim::AddressFromPublicKey($public_key, "nd");<br><br>
 $nd_address = Uwim::AddressFromMnemonic($mnemonic, "nd");<br><br>
 
-6. 6.	Receiving a RAW transaction line for sending to the blockchain API 
+6. Receiving a RAW transaction line for sending to the blockchain API 
 In order to generate a RAW transaction line, you need to specify the following data as: 
 Mnemonic phrase (the sender of the transaction); 
 Sender address (must be generated from a mnemonic phrase or be suitable for it); 
