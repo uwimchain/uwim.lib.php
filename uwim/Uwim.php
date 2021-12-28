@@ -29,6 +29,12 @@ class Uwim
 
     private const TRANSACTION_RAW_TYPES = [1, 3];
 
+    public const UW_ADDRESS_PREFIX = "uw";
+
+    public const SC_ADDRESS_PREFIX = "sc";
+
+    public const ND_ADDRESS_PREFIX = "nd";
+
     /**
      * @return string
      * @throws Exception
