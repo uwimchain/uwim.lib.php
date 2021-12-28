@@ -1,6 +1,5 @@
 # uwim.lib.php
 
-<<<<<<< HEAD
 First, you need to import the library
 ~~~php
 require_once 'vendor/autoload.php';
